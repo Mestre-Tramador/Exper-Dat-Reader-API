@@ -1,0 +1,26 @@
+################################################
+#         Laravel Git Attributes File.         #
+# Got from: https://github.com/laravel/laravel #
+################################################
+
+# General configuration preset on Laravel.
+* text=auto
+
+*.php diff=php
+*.md  diff=markdown
+
+CHANGELOG.md export-ignore
+
+# Force Batch Files to end with CRLF
+# and Shell Scripts with LF respectively.
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+
+*.sh   text eol=lf
+*.bash text eol=lf
+*.zsh  text eol=lf
+*.fish text eol=lf
+
+# Fix .env example File being considered
+# a Shell Script.
+*.env.example linguist-language=Text
